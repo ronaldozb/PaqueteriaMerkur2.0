@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Merkur HN &mdash; UNAH-VS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="~/css/aos.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+   
+    <!-- <div class="site-wrap"> -->
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    @RenderBody()
+    <header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-11 col-xl-2 site-logo">
+                    <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">MERKUR</a></h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                            <li><a href="#section-home" class="nav-link">Home</a></li>
+                            <li class="has-children">
+                                <a href="#section-about" class="nav-link">About Us</a>
+                                <ul class="dropdown">
+                                    <li><a href="#section-how-it-works" class="nav-link">How It Works</a></li>
+                                    <li><a href="#section-our-team" class="nav-link">Our Team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#section-services" class="nav-link">Services</a></li>
+                            <li><a href="#section-industries" class="nav-link">Industries</a></li>
+                            <li><a href="#section-blog" class="nav-link">Blog</a></li>
+                            <li><a href="#section-contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+
+                    <h1 class="text-white font-weight-light text-uppercase font-weight-bold" data-aos="fade-up">La Mejor Opcion Para Envios</h1>
+                    <p class="mb-5" data-aos="fade-up" data-aos-delay="100">En todo Honduras</p>
+                    <p data-aos="fade-up" data-aos-delay="200"><a href="~/Merkur.Web/Views/login/index.cshtml" class="btn btn-primary py-3 px-5 text-white">Ingresa Aqui!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section" id="section-about">
+        <div class="container">
+            <div class="row mb-5">
+
+                <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/img_3.jpg" alt="Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1" data-aos="fade-up">
+                    <div class="text-left pb-1 border-primary mb-4">
+                        <h2 class="text-primary">Quienes Somos</h2>
+                    </div>
+                    <p>Un pequeño grupo de amigos entuciasta por la programacion que se propusieron crear una de las mejores compañias de envios nacionales con la idea de empreder tanto fuera como dentro del pais.</p>
+                    <p class="mb-5">Todo empieza como un proyecto de clase pero ahora es mas que un proyecto es una realidad estamos inovando en la forma de hacer envios modernizando y automatizando los envios para una respuesta inmediata.</p>
+
+                    <ul class="ul-check list-unstyled success">
+                        <li>100% Confiables</li>
+                        <li>Soporte 24/7 365 dias al año</li>
+                        <li>Garantizamos que tu paquete llegara en condiciones</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section bg-image overlay" style="background-image: url('images/hero_bg_4.jpg');" id="section-how-it-works">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary" data-aos="fade">Como Funciona</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                    <div class="how-it-work-item">
+                        <span class="number">1</span>
+                        <div class="how-it-work-body">
+                            <h2>Registra tu Paquete</h2>
+                            <p class="mb-5">Mediante nuestra pagina para el usuario registras el paquete a enviar.</p>
+                            <ul class="ul-check list-unstyled success">
+                                <li class="text-white">No Drogas</li>
+                                <li class="text-white">No Armas</li>
+                                <li class="text-white">No Animales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                    <div class="how-it-work-item">
+                        <span class="number">2</span>
+                        <div class="how-it-work-body">
+                            <h2>Paga en linea</h2>
+                            <p class="mb-5">Realiza tu pago mediante transferencia Bancaria a la cuenta BAC 78854857 Merkur Honduras S.A.</p>
+                            <ul class="ul-check list-unstyled success">
+                                <li class="text-white">Confiable</li>
+                                <li class="text-white">Devoluciones con Justificacion</li>
+                                <li class="text-white">Precios competitivos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+                    <div class="how-it-work-item">
+                        <span class="number">3</span>
+                        <div class="how-it-work-body">
+                            <h2>Envio</h2>
+                            <p class="mb-5">Una ves hayas registrado y pagado tu envio un operador de la empresa respectivamente identicado pasara a recogerlo y lo llevara a su destino el envio.</p>
+                            <ul class="ul-check list-unstyled success">
+                                <li class="text-white">Personal Capacitado</li>
+                                <li class="text-white">Protección Garantisada</li>
+                                <li class="text-white">Envios en el menor tiempo posible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section border-bottom" id="section-our-team">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary" data-aos="fade">Nuestro Equipo</h2>
+                </div>
+            </div>
+            
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                        <div class="person">
+                            <img src="images/Cristofer.jpeg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                            <h3>Cristofer Manzanares</h3>
+                            <p class="position text-muted">Co-Founder, Engineer</p>
+                            <p class="mb-4">Co-fundador de la empersa con alto conocimiento en sistemas de informacion</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="https://www.facebook.com/cristofer.manzanares.3"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="https://www.instagram.com/cristofer_02/"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                        <div class="person">
+                            <img src="images/jeff.jpeg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                            <h3>Jeffry Gomez</h3>
+                            <p class="position text-muted">Co-Founder, COO</p>
+                            <p class="mb-4">Ingeniero en sistema, con alto conocimiento en base de datos, y sistemas sap para administracion de empresa.</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="https://www.facebook.com/jeffryangello.gomezreyes"><span class="icon-facebook"></span></a></li>
+                                <li><a href="https://twitter.com/JeffryGR15"><span class="icon-twitter"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/jeffry-gomez-56b768162"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="https://www.instagram.com/jeff_gr15/"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+                        <div class="person">
+                            <img src="images/orlando.jpeg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                            <h3>Orlando Garcia</h3>
+                            <p class="position text-muted">Co-Founder, Technical Engineer</p>
+                            <p class="mb-4">Licenciado en Informatica Administrativa, Especialista en Centro de datos, Diseñador a medio tiempo, Especialista en Hardware, Amantes a los VideoGame</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="https://www.facebook.com/GarciaVlogHN/?view_public_for=351647408706586"><span class="icon-facebook"></span></a></li>
+                                <li><a href="https://twitter.com/garciavloghn"><span class="icon-twitter"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/orl-garcia-fuentes-018436138/"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="https://www.instagram.com/garciavlog/"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
+                            <div class="person">
+                                <img src="images/ronaldo.jpeg" alt="Image" class="img-fluid rounded mb-5 w-75 rounded-circle">
+                                <h3>Ronaldo Zelaya</h3>
+                                <p class="position text-muted">Co-Founder, CEO</p>
+                                <p class="mb-4">Ingeniero Programador, especialista en java, Html, css, php, python etc. </p>
+                                <ul class="ul-social-circle">
+                                    <li><a href="https://www.facebook.com/zelaya015ronaldo"><span class="icon-facebook"></span></a></li>
+                                    <li><a href="https://twitter.com/RonaldoZelaya6"><span class="icon-twitter"></span></a></li>
+                                    <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                    <li><a href="https://www.instagram.com/ronaldo_zb/"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+
+    <div class="site-section bg-light" id="section-services">
+        <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="mb-0 text-primary">Nuestros Servicios</h2>
+                    <p class="color-black-opacity-5">Calidad/Precio.</p>
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-plane"></span></div>
+                        <div>
+                            <h3>Air Freight</h3>
+                            <p>Precios Areos Competitivos Mediante las mejores aerolineas del pais</p>
+                            <p><a href="#">Calificado</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-boat-ship"></span></div>
+                        <div>
+                            <h3>Ocean Freight</h3>
+                            <p>Contamos con la mejor seguridad maritima disponible certificada con estandares de calidad.</p>
+                            <p><a href="#">calificado</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-truck"></span></div>
+                        <div>
+                            <h3>Land Transportation</h3>
+                            <p>Seguridad al transportar por el suelo, en todos nuestros envios</p>
+                            <p><a href="#">Calificado</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-warehouse"></span></div>
+                        <div>
+                            <h3>Warehousing</h3>
+                            <p>Almacenaje y proteccion de paquetes.</p>
+                            <p><a href="#">Calificado</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-wooden"></span></div>
+                        <div>
+                            <h3>Storage</h3>
+                            <p>Calidad y seguridad en embaleje de los paquetes.</p>
+                            <p><a href="#">calidicado</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="unit-4 d-flex">
+                        <div class="unit-4-icon mr-4"><span class="text-primary flaticon-worldwide"></span></div>
+                        <div>
+                            <h3>Worldwide Delivery</h3>
+                            <p>Envios a cualquier parte del pais y fuera de este.</p>
+                            <p><a href="#">Calificado</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section block-13" id="section-industries">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="mb-0 text-primary">Industria</h2>
+                    <p class="color-black-opacity-5">La mejor paqueteria de envios.</p>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel nonloop-block-13">
+            <div>
+                <a href="#" class="unit-1 text-center">
+                    <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                    <div class="unit-1-text">
+                        <h3 class="unit-1-heading">Storage</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="unit-1 text-center">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                    <div class="unit-1-text">
+                        <h3 class="unit-1-heading">Air Transports</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="unit-1 text-center">
+                    <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                    <div class="unit-1-text">
+                        <h3 class="unit-1-heading">Cargo Transports</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="unit-1 text-center">
+                    <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                    <div class="unit-1-text">
+                        <h3 class="unit-1-heading">Cargo Ship</h3>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="unit-1 text-center">
+                    <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                    <div class="unit-1-text">
+                        <h3 class="unit-1-heading">Ware Housing</h3>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg); background-attachment: fixed;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-7" data-aos="fade-up">
+                    <a href="https://www.youtube.com/watch?v=VDeCczaAuF8" class="play-single-big mb-4 d-inline-block popup-vimeo"><span class="icon-play"></span></a>
+                    <h2 class="text-white font-weight-light mb-5 h1">Mira Aqui</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section border-bottom">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary">Testimonios</h2>
+                </div>
+            </div>
+            <div class="slide-one-item home-slider owl-carousel">
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4">
+                            <img src="images/pp.jpg" alt="Image" class="img-fluid mb-3">
+
+                        </figure>
+                        <blockquote>
+                            <p>&ldquo;Una excelente empresa para encargar nuestros paquetes tenemos varios años usando su servicio la mayor calidad precio del mercado.&rdquo;</p>
+                            <p class="author"> &mdash; Bily Fernandez</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4">
+                            <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3">
+
+                        </figure>
+                        <blockquote>
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p class="author"> &mdash; Roger Moore</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4">
+                            <img src="images/person_4.jpg" alt="Image" class="img-fluid mb-3">
+                        </figure>
+                        <blockquote>
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p class="author"> &mdash; Ben Carson</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial">
+                        <figure class="mb-4">
+                            <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-3">
+                        </figure>
+                        <blockquote>
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                            <p class="author"> &mdash; Jed Smith</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section" id="section-blog">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary">Envios</h2>
+                    <p class="color-black-opacity-5">Los mejores Precios &amp; Calidad En Honduras</p>
+                </div>
+            </div>
+            <div class="row mb-5 align-items-stretch">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                    <div class="h-entry">
+                        <a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
+                        <h2 class="font-size-regular"><a href="single.html">Envio Carga Pequeña 0 a 10 lbs</a></h2>
+                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                        <p>Precio:  150 Lps</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-entry">
+                        <a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
+                        <h2 class="font-size-regular"><a href="single.html">Envios Carga Mediana de 10 a 30 lbs</a></h2>
+                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                        <p>Precio:  350 Lps</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-entry">
+                        <a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a>
+                        <h2 class="font-size-regular"><a href="single.html">Envio carga Grande</a></h2>
+                        <div class="meta mb-4">by Jed Wilson <span class="mx-2">&bullet;</span> Jan 18, 2019 <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                        <p>Precio: Variable segun el peso y tamaño.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <p class="mb-0"><a href="https://free-template.co" class="btn btn-primary py-3 px-5 text-white">Ingresar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section bg-light" id="section-contact">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary">Contact Us</h2>
+                    <p class="color-black-opacity-5">See Our Daily News &amp; Updates</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-5">
+
+                    <form action="#" class="p-5 bg-white">
+
+                        <div class="row form-group">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label class="text-black" for="fname">First Name</label>
+                                <input type="text" id="fname" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-black" for="lname">Last Name</label>
+                                <input type="text" id="lname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <label class="text-black" for="email">Email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <label class="text-black" for="subject">Subject</label>
+                                <input type="subject" id="subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label class="text-black" for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-md-5">
+
+                    <div class="p-4 mb-3 bg-white">
+                        <p class="mb-0 font-weight-bold">Address</p>
+                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        <p class="mb-0 font-weight-bold">Phone</p>
+                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                        <p class="mb-0 font-weight-bold">Email Address</p>
+                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+                    </div>
+
+                    <div class="p-4 mb-3 bg-white">
+                        <h3 class="h5 text-black mb-3">More Info</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.</p>
+                        <p><a href="#" class="btn btn-primary px-4 py-2 text-white">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-5 mr-auto">
+                            <h2 class="footer-heading mb-4">About Us</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure deserunt ut architecto dolores quo beatae laborum aliquam ipsam rem impedit obcaecati ea consequatur.</p>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h2 class="footer-heading mb-4">Quick Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="footer-heading mb-4">Follow Us</h2>
+                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                    <form action="#" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- </div> -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

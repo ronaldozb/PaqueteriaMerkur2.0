@@ -1,0 +1,116 @@
+﻿@model Merkur.BL.OrdenEnvios
+
+@{
+    ViewBag.Title = "Orden Detalle";
+}
+
+<h2>Orden Detalle @Model.Id</h2>
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>Cliente</td>
+        <td>@Model.Cliente.Nombres</td>
+    </tr>
+    <tr>
+        <td>Telefono</td>
+        <td>@Model.Cliente.Telefono</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.Cliente.Email</td>
+    </tr>
+    <tr>
+        <td>Fecha</td>
+        <td>@Model.Fecha</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>@Model.Total</td>
+    </tr>
+
+</table>
+
+<p>
+    @Html.ActionLink("Nuevo Paquete", "Crear", new { id = Model.Id })
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            Producto
+        </th>
+        <th>
+            Destino
+        </th>
+        <th>
+            Categoria
+        </th>
+        <th>
+            FechaDeEntrga
+        </th>
+        <th>
+            Longitud1
+        </th>
+        <th>
+            Longitud2
+        </th>
+        <th>
+            Latitud1
+        </th>
+        <th>
+            Latitud2
+        </th>
+        <th>
+            Precio
+        </th>
+        <th>
+            DistanciaRecorrida
+        </th>
+        <th>
+            Total
+        </th>
+    </tr>
+
+@foreach (var item in Model.ListadeOrdenEnviosDetalle) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Categorias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.FechadeEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Longitud1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Longitud2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Latitud1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.Latitud2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+        <td>
+            @Html.ActionLink("Eliminar", "Eliminar", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+@Html.ActionLink("Regresar A La Ordenes", "Index","OrdenesMerkur")
